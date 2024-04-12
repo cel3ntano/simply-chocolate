@@ -34,13 +34,10 @@ img {
 }
 
 .container {
-  /* width: 100%; */
-  /* max-width: 1166px; */
-  width: 320px;
-  /* padding-left: 15px; */
-  /* padding-right: 15px; */
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 100%;
+  max-width: 1166px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
   /* outline: 2px solid #8f0ef8; */
 }
@@ -61,11 +58,9 @@ img {
 .title {
   color: #111;
   text-align: center;
-  /* font-size: 24px; */
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
-  /* line-height: 1.17; */
-  line-height: 1.2;
+  line-height: 1.17;
   letter-spacing: -0.03em;
   text-transform: uppercase;
 }
@@ -242,18 +237,6 @@ img {
 
 .features-item {
   width: calc((100% - 176px) / 3);
-  position: relative;
-}
-
-.features-item:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 124px;
-  right: -44px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.5);
 }
 
 .features-subtitle {
@@ -273,10 +256,8 @@ img {
 
 /* ========== TASTE ============= */
 .taste {
-  /* padding-top: 120px; */
-  /* padding-bottom: 60px; */
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding-top: 120px;
+  padding-bottom: 60px;
 }
 
 .taste-title {
@@ -302,27 +283,14 @@ img {
 .taste-list {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 24px 32px; */
-  row-gap: 20px;
+  gap: 24px 32px;
 }
 
 .taste-item {
-  background-color: #ffffff;
-  padding: 28px 23px;
-  /* width: calc((100% - 96px) / 4); */
-  width: 100%;
-  border-radius: 15px;
-  border: 1px solid #fd9222;
-}
-
-.taste-item:nth-child(4n + 1) {
   background-color: #fd9222;
-  border: none;
-}
-
-.taste-item:nth-child(4n + 3) {
-  background-color: #1e1823;
-  border: none;
+  border-radius: 15px;
+  padding: 28px 23px;
+  flex-basis: calc((100% - 96px) / 4);
 }
 
 .taste-picture {
@@ -336,10 +304,6 @@ img {
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-}
-
-.taste-item:nth-child(2n + 2) .taste-subtitle {
-  color: #111111;
 }
 
 /* ============== MADE ================ */
@@ -424,31 +388,18 @@ img {
 }
 
 .products-title {
-  margin-bottom: 50px;
 }
 
 .products-title span {
 }
 
 .products-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 18px;
 }
 
 .products-item {
-  padding: 32px 20px;
-  width: calc((100% - 54px) / 4);
-  border-radius: 15px;
-  border: 1px solid rgba(17, 17, 17, 0.1);
-  background: #fff;
-  text-align: center;
 }
 
 .products-picture {
-  margin-bottom: 8px;
 }
 
 .products-subtitle {
@@ -458,7 +409,6 @@ img {
   line-height: 1.33;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  margin-bottom: 2px;
 }
 
 .products-item-text {
@@ -467,20 +417,15 @@ img {
   font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  margin-bottom: 18px;
 }
 
 .products-btn {
-  padding: 8px 20px;
   color: #111;
   font-family: inherit;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  border-radius: 100px;
-  border: 1px solid rgba(17, 17, 17, 0.1);
-  background: #fafafa;
 }
 
 /* =========== SELLERS ============= */
@@ -557,33 +502,22 @@ img {
 /* ============== LOVED ================== */
 .loved {
   padding-top: 60px;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
 }
 
 .loved-title {
-  margin-bottom: 90px;
 }
 
 .title {
 }
 
 .loved-list {
-  display: flex;
-  gap: 28px;
-  margin-bottom: 50px;
 }
 
 .loved-item {
-  padding: 56px 24px 24px 24px;
-  border-radius: 15px;
-  border: 1px solid rgba(17, 17, 17, 0.1);
-  background: #fff;
-  box-shadow: 0px 9.049px 100px 0px rgba(17, 17, 17, 0.03);
-  width: calc((100% - 56px) / 3);
-  position: relative;
 }
 
-.loved-subtitle {
+.loved-sustitle {
   color: #111;
   text-align: center;
   font-size: 18px;
@@ -601,23 +535,13 @@ img {
 }
 
 .loved-picture {
-  position: absolute;
-  top: -40px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .loved-btn {
-  padding: 14px 40px;
-  background-color: transparent;
   color: #111;
   font-size: 18px;
   font-weight: 600;
   line-height: normal;
-  border-radius: 100px;
-  border: 1px solid #fd9222;
-  display: block;
-  margin: 0 auto;
 }
 
 /* =============== FOOTER ================= */
@@ -893,12 +817,4 @@ img {
   background-color: #fd9222;
   border: none;
   fill: #ffffff;
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 734px;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
 }
