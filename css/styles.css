@@ -1,5 +1,5 @@
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: #fafafa;
 }
 
@@ -35,9 +35,8 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1166px;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 1168px;
+  padding: 0 16px;
   margin: 0 auto;
   /* outline: 2px solid #8f0ef8; */
 }
@@ -112,6 +111,7 @@ img {
   letter-spacing: -0.03em;
   display: flex;
   align-items: center;
+  gap: 5px;
 }
 
 .header-logo-italic {
@@ -149,7 +149,7 @@ img {
   background-position: center;
   background-size: cover;
   border-radius: 30px;
-  padding: 380px 40px 40px 40px;
+  padding: 381px 40px 40px 40px;
 }
 
 .hero-title {
@@ -167,7 +167,7 @@ img {
   align-items: center;
 }
 
-.hero-btn {
+.hero-buy-btn {
   color: #fff;
   font-family: inherit;
   font-size: 14px;
@@ -179,19 +179,19 @@ img {
   padding: 14px 40px;
   border: 1px solid transparent;
   margin-right: 14px;
-  transition: background 250ms ease-in-out, border 250ms ease-in-out;
+  transition: all 250ms ease;
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
-  /* color: #fff;
+.hero-buy-btn:hover,
+.hero-buy-btn:focus {
+  color: #fd9222;
   font-family: inherit;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  border-radius: 100px; */
-  background: transparent;
+  border-radius: 100px;
+  background: #fcf1e0;
   /* padding: 14px 40px; */
   border: 1px solid #fd9222;
   border: 1px solid;
@@ -207,18 +207,54 @@ img {
   border: 1px solid #fff;
   padding: 14px 40px;
   background-color: transparent;
+  transition: all 250ms ease;
+  &:hover {
+    border: 1px solid #fd9222;
+    color: #fd9222;
+  }
 }
 
 .hero-scroll-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
   color: #fff;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.29;
   letter-spacing: -0.03em;
-  border: 1px solid #fff;
   border-radius: 100px;
-  padding: 14px 40px;
+  padding: 0 40px;
   margin-left: auto;
+  transition: all 0.2s ease;
+}
+
+.hero-scroll-link .scroll-down-icon {
+  background-color: #fff;
+  border-radius: 19px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  transition: all 0.2s ease;
+}
+
+.scroll-down-icon svg {
+  transition: all 0.2s ease;
+  fill: #fd9222;
+}
+
+.hero-scroll-link:hover {
+  color: #fd9222;
+}
+
+.hero-scroll-link:hover .scroll-down-icon {
+  background-color: #fd9222;
+}
+
+.hero-scroll-link:hover .scroll-down-icon svg {
+  fill: #fff;
 }
 
 /* ========== FEATURES ============ */
@@ -281,6 +317,7 @@ img {
 }
 
 .taste-list {
+  /* outline: 2px solid tomato; */
   display: flex;
   flex-wrap: wrap;
   gap: 24px 32px;
@@ -291,6 +328,22 @@ img {
   border-radius: 15px;
   padding: 28px 23px;
   flex-basis: calc((100% - 96px) / 4);
+}
+
+.taste-item:nth-child(4n + 1) {
+  background-color: #fd9222;
+}
+
+.taste-item:nth-child(4n + 2),
+.taste-item:nth-child(4n + 4) {
+  background-color: #fff;
+  .taste-subtitle {
+    color: #111111;
+  }
+}
+
+.taste-item:nth-child(4n + 3) {
+  background-color: #000;
 }
 
 .taste-picture {
@@ -324,11 +377,11 @@ img {
 }
 
 .made-title {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
 .made-title::before {
-  content: "";
+  content: '';
 }
 
 .made-title span {
@@ -359,7 +412,7 @@ img {
   top: 5px;
   left: 0;
   display: block;
-  content: "";
+  content: '';
   width: 8px;
   height: 8px;
   border: 1px solid #eceded;
@@ -394,15 +447,31 @@ img {
 }
 
 .products-list {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px 18px;
+  text-align: center;
 }
 
 .products-item {
+  box-sizing: border-box;
+  padding: 32px 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: #fff;
+  /* width: 270px; */
+  /* flex-basis: calc((100% - 54px) / 4); */
+  width: calc((100% - 54px) / 4);
 }
 
 .products-picture {
 }
 
 .products-subtitle {
+  margin-top: 8px;
   color: #111;
   font-size: 18px;
   font-weight: 600;
@@ -412,6 +481,7 @@ img {
 }
 
 .products-item-text {
+  margin-top: 2px;
   color: rgba(17, 17, 17, 0.7);
   font-size: 12px;
   font-weight: 400;
@@ -420,12 +490,15 @@ img {
 }
 
 .products-btn {
+  margin-top: 18px;
   color: #111;
-  font-family: inherit;
   font-size: 14px;
-  font-style: normal;
   font-weight: 600;
   line-height: normal;
+  padding: 8px 20px;
+  border-radius: 100px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: #fafafa;
 }
 
 /* =========== SELLERS ============= */
@@ -505,19 +578,34 @@ img {
   padding-bottom: 60px;
 }
 
-.loved-title {
+.container .loved-title {
+  margin-bottom: 91px;
 }
 
 .title {
+  margin-bottom: 50px;
 }
 
 .loved-list {
+  outline: 1px solid tomato;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 28px;
 }
 
 .loved-item {
+  text-align: center;
+  padding: 0 24px 24px 24px;
+  position: relative;
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: #fff;
+  box-shadow: 0px 9.049px 100px 0px rgba(17, 17, 17, 0.03);
 }
 
-.loved-sustitle {
+.loved-subtitle {
+  margin-top: 56px;
   color: #111;
   text-align: center;
   font-size: 18px;
@@ -526,6 +614,8 @@ img {
 }
 
 .loved-item-text {
+  margin-top: 24px;
+  width: 312px;
   color: rgba(17, 17, 17, 0.7);
   text-align: center;
   font-size: 14px;
@@ -535,13 +625,29 @@ img {
 }
 
 .loved-picture {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .loved-btn {
+  display: block;
+  margin: 49px auto 0;
   color: #111;
   font-size: 18px;
   font-weight: 600;
   line-height: normal;
+  border-radius: 100px;
+  border: 1px solid #fd9222;
+  padding: 14px 40px;
+  background-color: transparent;
+  transition: all 250ms ease;
+  &:hover {
+    border: 1px solid #fd9222;
+    background-color: #fd9222;
+    color: #fff;
+  }
 }
 
 /* =============== FOOTER ================= */
@@ -809,7 +915,10 @@ img {
   height: 20px;
   border-radius: 6px;
   border: 1px solid rgba(17, 17, 17, 0.14);
-  transition: background-color 200ms ease, border 200ms ease, fill 200ms ease;
+  transition:
+    background-color 200ms ease,
+    border 200ms ease,
+    fill 200ms ease;
   fill: transparent;
 }
 

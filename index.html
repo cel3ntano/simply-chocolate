@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -81,15 +81,23 @@
     </header>
     <main>
       <section class="hero">
-        <div class="container hero-container">
-          <h1 class="hero-title">
-            Treat yourself or a loved one to our finest ingredients for a moment
-            of pure delight!
-          </h1>
-          <div class="hero-buttons">
-            <button type="button" class="hero-btn">Buy now</button>
-            <a href="" class="hero-made-link">How it’s made</a>
-            <a href="" class="hero-scroll-link">Scroll down</a>
+        <div class="container">
+          <div class="hero-container">
+            <h1 class="hero-title">
+              Treat yourself or a loved one to <br />
+              our finest ingredients for a moment of pure delight!
+            </h1>
+            <div class="hero-buttons">
+              <button type="button" class="hero-buy-btn">Buy now</button>
+              <a href="" class="hero-made-link">How it’s made</a>
+              <a href="" class="hero-scroll-link"
+                >scroll down
+                <div class="scroll-down-icon">
+                  <svg width="22" height="22">
+                    <use href="./images/icons.svg#icon-down-arrow"></use>
+                  </svg></div
+              ></a>
+            </div>
           </div>
         </div>
       </section>
@@ -162,11 +170,12 @@
             </li>
             <li class="taste-item">
               <img
+                class="taste-picture"
                 src="./images/img-3.png"
                 alt="NUTS"
                 width="214"
                 height="160" />
-              <h3>NUTS</h3>
+              <h3 class="taste-subtitle">NUTS</h3>
             </li>
             <li class="taste-item">
               <img
@@ -279,7 +288,7 @@
               <p class="products-item-text">Dark chocolate</p>
               <button class="products-btn" type="button">45 UAH</button>
             </li>
-            <li>
+            <li class="products-item">
               <img
                 class="products-picture"
                 src="./images/choc-img-2.jpg"
@@ -290,7 +299,7 @@
               <p class="products-item-text">Milk chocolate</p>
               <button class="products-btn" type="button">50 UAH</button>
             </li>
-            <li>
+            <li class="products-item">
               <img
                 class="products-picture"
                 src="./images/choc-img-3.jpg"
@@ -301,7 +310,7 @@
               <p class="products-item-text">Dark chocolate</p>
               <button class="products-btn" type="button">66 UAH</button>
             </li>
-            <li>
+            <li class="products-item">
               <img
                 class="products-picture"
                 src="./images/choc-img-4.jpg"
@@ -312,7 +321,7 @@
               <p class="products-item-text">Dark chocolate</p>
               <button class="products-btn" type="button">54 UAH</button>
             </li>
-            <li>
+            <li class="products-item">
               <img
                 class="products-picture"
                 src="./images/choc-img-5.jpg"
@@ -323,7 +332,7 @@
               <p class="products-item-text">Milk chocolate</p>
               <button class="products-btn" type="button">45 UAH</button>
             </li>
-            <li>
+            <li class="products-item">
               <img
                 class="products-picture"
                 src="./images/choc-img-6.jpg"
@@ -334,25 +343,27 @@
               <p class="products-item-text">Milk chocolate</p>
               <button class="products-btn" type="button">66 UAH</button>
             </li>
-            <li>
+            <li class="products-item">
               <img
+                class="products-picture"
                 src="./images/choc-img-7.jpg"
                 alt="Roasted fruits"
                 width="230"
                 height="201" />
-              <h3>Roasted fruits</h3>
-              <p>Dark chocolate</p>
-              <button type="button">54 UAH</button>
+              <h3 class="products-subtitle">Roasted fruits</h3>
+              <p class="products-item-text">Dark chocolate</p>
+              <button class="products-btn" type="button">54 UAH</button>
             </li>
-            <li>
+            <li class="products-item">
               <img
+                class="products-picture"
                 src="./images/choc-img-8.jpg"
                 alt="Classic"
                 width="230"
                 height="201" />
-              <h3>Classic</h3>
-              <p>White chocolate</p>
-              <button type="button"></button>
+              <h3 class="products-subtitle">Classic</h3>
+              <p class="products-item-text">White chocolate</p>
+              <button class="products-btn" type="button">54 UAH</button>
             </li>
           </ul>
         </div>
