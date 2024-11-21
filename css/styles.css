@@ -360,17 +360,20 @@ img {
 
 .features {
   background-color: #1e1823;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 20px 0px;
+  @media screen and (min-width: 1200px) {
+    padding: 50px 0px;
+  }
 }
 
 .features-list {
   display: flex;
   flex-direction: column;
-  gap: 88px;
-  padding: 0 18px;
+  gap: 20px;
   @media screen and (min-width: 1200px) {
     flex-direction: row;
+    gap: 88px;
+    padding: 0 18px;
   }
 }
 
@@ -395,25 +398,33 @@ img {
 }
 
 .features-subtitle {
-  margin-top: 19px;
+  margin: 22px 0 18px;
   color: #fff;
   font-size: 18px;
   font-weight: 600;
   line-height: normal;
-  margin-bottom: 18px;
+  @media screen and (min-width: 1200px) {
+    margin: 19px 0 18px;
+  }
 }
 
 .features-item-text {
+  max-width: 308px;
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
-  line-height: 1.29;
+  line-height: normal;
   letter-spacing: -0.02em;
+  @media screen and (min-width: 1200px) {
+    line-height: 1.29;
+  }
 }
 
 /* ========== TASTE ============= */
 .taste {
-  padding-top: 120px;
-  padding-bottom: 60px;
+  padding: 80px 0px 40px;
+  @media screen and (min-width: 1200px) {
+    padding: 120px 0 60px;
+  }
 }
 
 .taste-title {
@@ -439,7 +450,11 @@ img {
 .taste-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 24px 32px;
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+  }
 }
 
 .taste-item {
@@ -496,8 +511,10 @@ img {
 /* ============== MADE ================ */
 
 .made {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 40px 0px;
+  @media screen and (min-width: 1200px) {
+    padding: 60px 0px;
+  }
 }
 
 .made-wrapper {
@@ -590,11 +607,16 @@ img {
 /* ========= PRODUCTS ============= */
 
 .products {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 40px 0px;
+  @media screen and (min-width: 1200px) {
+    padding: 60px 0px;
+  }
 }
 
-.products-title {
+.products-title.title {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 22px;
+  }
 }
 
 .products-title span {
@@ -658,8 +680,10 @@ img {
 
 /* =========== SELLERS ============= */
 .sellers {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 40px 0px;
+  @media screen and (min-width: 1200px) {
+    padding: 60px 0px;
+  }
 }
 
 .sellers-list {
@@ -729,16 +753,24 @@ img {
 
 /* ============== LOVED ================== */
 .loved {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 40px 0px 80px;
+  @media screen and (min-width: 1200px) {
+    padding: 60px 0px;
+  }
 }
 
 .container .loved-title {
-  margin-bottom: 91px;
+  margin-bottom: 74px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 91px;
+  }
 }
 
 .title {
-  margin-bottom: 50px;
+  margin-bottom: 32px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .loved-list {
@@ -747,6 +779,19 @@ img {
   align-items: stretch;
   flex-wrap: wrap;
   gap: 28px;
+  @media (max-width: 767px) {
+    .loved-item:not(:first-child) {
+      display: none;
+    }
+  }
+  @media (max-width: 1199px) {
+    .loved-item:nth-child(n + 3) {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .loved-item {
@@ -808,8 +853,10 @@ img {
 /* =============== FOOTER ================= */
 .footer {
   background-color: #1e1823;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 32px 0px;
+  @media screen and (min-width: 1200px) {
+    padding: 50px 0px;
+  }
 }
 
 .footer-top {
@@ -904,9 +951,10 @@ img {
 .footer-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 18px;
   @media screen and (min-width: 1200px) {
     flex-direction: row;
+    gap: 24px;
   }
 }
 
@@ -939,6 +987,9 @@ img {
 .footer-form {
   display: flex;
   gap: 8px;
+  @media screen and (max-width: 767px) {
+    margin-top: 32px;
+  }
 }
 
 .footer-input {
